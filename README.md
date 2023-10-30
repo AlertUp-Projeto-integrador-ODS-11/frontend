@@ -1,27 +1,43 @@
-# React + TypeScript + Vite
+# AlertUp - Frontend :earth_americas::leaves:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório do frontend do projeto **AlertUp**, uma rede social voltada para denúncias de situações cotidianas relacionadas ao Objetivo de Desenvolvimento Sustentável (ODS) 11 da ONU. Nosso objetivo é criar uma plataforma que permita aos cidadãos denunciar problemas urbanos, promovendo um ambiente urbano mais sustentável e melhorando a qualidade de vida nas cidades.
 
-Currently, two official plugins are available:
+O frontend foi desenvolvido utilizando a tecnologia React e oferece uma interface de usuário intuitiva para os usuários do AlertUp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br> 
 
-## Expanding the ESLint configuration
+![ODS 11](https://www.acij.com.br/index/wp-content/uploads/2020/10/ods-11-preve-cidades-e-comunidades-sustentaveis-1024x538.jpg) 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<br>
 
-- Configure the top-level `parserOptions` property like this:
+**Equipe do Projeto:**
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- [**Breno Henrique**](https://github.com/brenonsc)
+- [**Julia Alexandrino**](https://github.com/juhalexandrino)
+- [**Matheus Queiroz**](https://github.com/MatheusSQueiroz)
+- [**Paloma Ferreira**](https://github.com/Paloma-Ferreira)
+- [**Roniberto Rodrigues**](https://github.com/RoninZin)
+- [**Shomara Quispe**](https://github.com/ShomaraQuispe)
+- [**Victor Paliari**](https://github.com/victorpaliari)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<br>
+
+**Tecnologias Utilizadas:**
+
+- React
+
+<br>
+
+**Funcionalidades:**
+
+- Registro e autenticação de usuários.
+- Criação e edição de denúncias.
+- Interações com denúncias.
+- Classificação de denúncias com base na gravidade.
+- Busca avançada de denúncias por categoria, localização, etc.
+
+<br>
+
+## Projeto Integrador para Conclusão de Curso da Generation Brasil
+
+Este projeto faz parte dos requisitos para a conclusão do programa de treinamento da Generation Brasil. Foi uma oportunidade incrível para colocarmos em prática todas as tecnologias aprendidas durante o curso, além das soft skills relacionadas a trabalho em grupo, orientação ao futuro, entre outras.
