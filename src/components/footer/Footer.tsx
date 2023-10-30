@@ -1,4 +1,4 @@
-import { FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
+import { Link, useNavigate } from "react-router-dom";
 import { GitHub } from 'react-feather'
 
 function Footer() {
@@ -12,12 +12,9 @@ function Footer() {
                     <p className='text-xl font-bold'>
                             AlertUp! | Copyright {data}
                         </p>
-                    <p className='text-lg'>Acesse nossas redes sociais:</p>
+                    <p className='text-lg'>Acesse nosso GitHub:</p>
                     <div className='flex gap-2'>
-                        <LinkedinLogo size={48} weight='bold' href='' />
-                        <InstagramLogo size={48} weight='bold' />
-                        <FacebookLogo size={48} weight='bold' />
-                        <GithubLogo size={48} weight='bold' />
+                        <Link to='https://github.com/AlertUp-Projeto-integrador-ODS-11' target="_blank" className='hover:opacity-70'><GitHub size={48} /></Link>
                     </div>
                 </div>
             </div>

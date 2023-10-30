@@ -43,7 +43,7 @@ function Contato() {
                     <div className="flex justify-center ">
                         <img
                             src="./src/assets/contact-page.svg"
-                            alt="Imagem Página Home"
+                            alt="Imagem Página Contato"
                             className='w-2/3'
                         />
                     </div>

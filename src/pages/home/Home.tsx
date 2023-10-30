@@ -7,12 +7,12 @@ function Home() {
                     <div className="flex flex-col gap-4 items-center justify-center py-4">
                     <h2 className='text-5xl font-bold'>Seja bem vinde!</h2>
                         <p className='text-xl'>
-                            Realize aqui suas denúncias
+                            Realize aqui suas denúncias:
                         </p>
 
                         <div className="flex justify-around gap-4">
                         <button className='rounded bg-primary text-white py-2 px-4'>
-                                Ver Postagens
+                                Nova Denúncia
                         </button>
                         </div>
                     </div>
