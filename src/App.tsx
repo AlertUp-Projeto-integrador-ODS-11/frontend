@@ -7,6 +7,8 @@ import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import ListaTemas from './components/temas/listaTema/ListaTema';
 import Cadastro from './pages/cadastro/Cadastro';
+import SobreNos from './pages/sobreNos/SobreNos';
+import Contato from './pages/contato/Contato';
 import FormularioTema from './components/temas/formularioTema/FormularioTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
 
@@ -25,6 +27,8 @@ function App() {
               <Route path="/cadastroTema" element={<FormularioTema />} />
               <Route path="/editarTema/:id" element={<FormularioTema />} />
               <Route path="/deletarTema/:id" element={<DeletarTema />} />
+              <Route path="/SobreNos" element={<SobreNos />} />
+              <Route path="/contato" element={<Contato />} />
             </Routes>
           </div>  
         <Footer />

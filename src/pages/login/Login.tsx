@@ -36,9 +36,11 @@ function Login() {
 
     return ( 
         <>
-            <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold">
-                <form className="flex justify-center items-center flex-col w-1/2 gap-4" onSubmit={login}>
-                    <h2 className="text-slate-900 text-5xl ">Entrar</h2>
+            <div className="h-screen place-items-center font-bold bg-gradient-to-t from-[#e9a028] to-[#ff5b22] ...">
+                <div className="flex justify-center">
+                <div className="flex justify-center bg-[#fcfaf5e1] p-20 m-12 rounded-[15px]">
+                <form className="flex justify-center items-center flex-col w-full gap-6" onSubmit={login}>
+                    <h2 className="text-[#FF5B22] text-5xl ">Entrar</h2>
                     <div className="flex flex-col w-full">
                         <label htmlFor="email">Usuário</label>
                         <input
@@ -46,7 +48,7 @@ function Login() {
                             id="email"
                             name="email"
                             placeholder="Usuario"
-                            className="border-2 border-slate-700 rounded p-2"
+                            className="border-1 border-slate-700 rounded p-2"
                             value={usuarioLogin.email}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
@@ -58,15 +60,15 @@ function Login() {
                             id="senha"
                             name="senha"
                             placeholder="Senha"
-                            className="border-2 border-slate-700 rounded p-2"
+                            className="border-1 border-slate-700 rounded p-2"
                             value={usuarioLogin.senha} 
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
                     <button
                         type='submit'
-                        className="rounded bg-indigo-400 flex justify-center
-                                   hover:bg-indigo-900 text-white w-1/2 py-2">
+                        className="rounded bg-primary flex justify-center
+                                   hover:bg-[#fa023c] text-white w-1/2 py-2">
                         {isLoading ? <RotatingLines
                             strokeColor="white"
                             strokeWidth="5"
@@ -77,17 +79,27 @@ function Login() {
                             <span>Entrar</span>}
                     </button>
 
-                    <hr className="border-slate-800 w-full" />
+                    <hr className="border-orange-500 w-full" />
 
                     <p>
                         Ainda não tem uma conta?{' '}
-                        <Link to="/cadastro" className="text-indigo-800 hover:underline">
+                        <Link to="/cadastro" className="text-[#FF5B22] hover:underline">
                             Cadastre-se
                         </Link>
                     </p>
                 </form>
-                <div className="fundoLogin hidden lg:block"></div>
-            </div>
+
+                </div>
+                </div>
+
+
+                <div>
+                    
+                </div>
+
+
+                
+                </div>
         </>
     );
 }
