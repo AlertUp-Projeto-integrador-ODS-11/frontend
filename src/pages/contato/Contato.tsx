@@ -34,8 +34,8 @@ function Contato() {
                             </div>
 
                             <div className='m-6'>
-                                <img className='w-32 h-32 rounded-full mb-4 hover:opacity-70' src="https://media.licdn.com/dms/image/D4D03AQFjTcSaRcTnQQ/profile-displayphoto-shrink_800_800/0/1698440195696?e=1704326400&v=beta&t=c60yP-hhnWqmSXrTYLWHEFR7BlPnuMb1d3BpiuBVfLo"/>
-                                <a href="https://ww.lindkein.com/in/victorpaliari" target ="_blank">Victor Paliari</a>
+                                <img className='w-32 h-32 rounded-full mb-4 hover:opacity-70' src="https://media.licdn.com/dms/image/D4D03AQFDfsbShDVfEQ/profile-displayphoto-shrink_800_800/0/1699473162865?e=1704931200&v=beta&t=J1kiIBpzMs0Qo2A_8317VUc2XXOMOSXY-cBK-o97ohg"/>
+                                <a href="https://ww.linkedin.com/in/victorpaliari" target ="_blank">Victor Paliari</a>
                             </div>
                         </div>
                     </div>
