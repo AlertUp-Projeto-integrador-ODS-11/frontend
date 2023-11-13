@@ -11,6 +11,8 @@ import SobreNos from './pages/sobreNos/SobreNos';
 import Contato from './pages/contato/Contato';
 import FormularioTema from './components/temas/formularioTema/FormularioTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
+import ListaPostagens from "./components/postagens/listaPostagens/ListaPostagens.tsx";
+import FormularioPostagem from "./components/postagens/formularioPostagem/FormularioPostagem.tsx";
 
 function App() {
   return (
@@ -27,6 +29,10 @@ function App() {
               <Route path="/cadastroTema" element={<FormularioTema />} />
               <Route path="/editarTema/:id" element={<FormularioTema />} />
               <Route path="/deletarTema/:id" element={<DeletarTema />} />
+              <Route path="/postagens" element={<ListaPostagens />} />
+              <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
+              <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
+              <Route path="/deletarPostagem/:id" element={<FormularioPostagem />} />
               <Route path="/SobreNos" element={<SobreNos />} />
               <Route path="/contato" element={<Contato />} />
             </Routes>

@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Home, Mail, PlusCircle, Users, LogOut } from 'react-feather';
-import { Chats, Cards} from "@phosphor-icons/react";
+import { Chats, Cards, PlusSquare } from "@phosphor-icons/react";
 
 function Navbar (){
 
@@ -27,7 +27,8 @@ function Navbar (){
 
                     <div className="flex gap-6 ">
                         <Link to='/home'title="Home" className='hover:opacity-70'><Home className="text-white h-8 w-8" /></Link>
-                        <Link to='/' title="Postagens" className='hover:opacity-70'><Chats className="text-white h-8 w-8" /></Link>
+                        <Link to='/cadastroPostagem' title="Cadatrar Postagem" className='hover:opacity-70'><PlusSquare className="text-white h-8 w-8" /></Link>
+                        <Link to='/postagens' title="Postagens" className='hover:opacity-70'><Chats className="text-white h-8 w-8" /></Link>
                         <Link to='/temas' title="Tema" className='hover:opacity-70'><Cards className="text-white h-8 w-8" /></Link>
                         <Link to='/cadastroTema' title="Cadastrar tema" className='hover:opacity-70'><PlusCircle className="text-white h-8 w-8" /></Link>
                         <Link to='/contato' title="Contato" className='hover:opacity-70'><Mail className="text-white h-8 w-8" /></Link>
