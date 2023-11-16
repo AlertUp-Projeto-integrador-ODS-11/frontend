@@ -132,6 +132,8 @@ function FormularioPostagem() {
 
     const carregandoTema = tema.descricao === '';
 
+    console.log(tema)
+
     return (
         <div className="container flex flex-col mx-auto items-center">
             <h1 className="text-4xl text-center my-8">
@@ -166,11 +168,37 @@ function FormularioPostagem() {
                 </div>
 
                 <div className="flex flex-col gap-2">
+                    <label htmlFor="relevancia">Relevancia da Postagem</label>
+                    <input
+                        value={postagem.relevancia}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+                        type="number"
+                        placeholder="Adicione aqui o relevancia da Postagem"
+                        name="relevancia"
+                        required
+                        className="border-2 border-slate-700 rounded p-2"
+                    />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                    <label htmlFor="municipio">Municipio da Postagem</label>
+                    <input
+                        value={postagem.municipio}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+                        type="text"
+                        placeholder="Adicione aqui o municipio da Postagem"
+                        name="municipio"
+                        required
+                        className="border-2 border-slate-700 rounded p-2"
+                    />
+                </div>
+
+                <div className="flex flex-col gap-2">
                     <p>Tema da Postagem</p>
                     <select name="tema" id="tema" className='border p-2 border-slate-800 rounded'
                             onChange={(e) => buscarTemaPorId(e.currentTarget.value)}
                     >
-                        <option value="" selected disabled>Selecione um Tema</option>
+                        <option value="" selected disabled>Selecione um tema</option>
                         {temas.map((tema) => (
                             <>
                                 <option value={tema.id} >{tema.titulo}</option>
