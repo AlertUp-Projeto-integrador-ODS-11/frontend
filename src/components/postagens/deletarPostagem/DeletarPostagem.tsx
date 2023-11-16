@@ -87,7 +87,7 @@ function DeletarPostagem() {
 
                 <div className="p-4">
                     <p className='text-xl h-full'>{postagem.titulo}</p>
-                    <p>{postagem.texto}</p>
+                    <p>{postagem.descricao}</p>
                 </div>
                 <div className="flex">
                     <button

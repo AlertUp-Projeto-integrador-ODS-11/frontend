@@ -13,6 +13,7 @@ import FormularioTema from './components/temas/formularioTema/FormularioTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
 import ListaPostagens from "./components/postagens/listaPostagens/ListaPostagens.tsx";
 import FormularioPostagem from "./components/postagens/formularioPostagem/FormularioPostagem.tsx";
+import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem.tsx';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
               <Route path="/postagens" element={<ListaPostagens />} />
               <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
               <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
-              <Route path="/deletarPostagem/:id" element={<FormularioPostagem />} />
+              <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
               <Route path="/SobreNos" element={<SobreNos />} />
               <Route path="/contato" element={<Contato />} />
             </Routes>
