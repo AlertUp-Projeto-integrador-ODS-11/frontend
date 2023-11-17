@@ -19,7 +19,7 @@ function Navbar (){
                 <div className="container flex justify-between flex items-center ... text-lg ">
                 <Link to='/home' title="Home" className='hover:opacity-70'>
                 <img
-                        src="/src/assets/alertup-logo.png"
+                        src="/images/alertup-logo.png"
                         alt="AlertUp Logo"
                         className="h-12 mr-4"
                     /> </Link>

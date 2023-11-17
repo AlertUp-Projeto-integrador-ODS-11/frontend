@@ -19,7 +19,7 @@ function Home() {
 
                     <div className="flex justify-center ">
                         <img
-                            src="./src/assets/home-image.svg"
+                            src="/images/home-image.svg"
                             alt="Imagem Página Home"
                             className='w-2/3'
                         />

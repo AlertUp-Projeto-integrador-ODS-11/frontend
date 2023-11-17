@@ -1,4 +1,3 @@
-import { FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
 function Contato() {
     
     return (
@@ -42,7 +41,7 @@ function Contato() {
 
                     <div className="flex justify-center ">
                         <img
-                            src="./src/assets/contact-page.svg"
+                            src="/images/contact-page.svg"
                             alt="Imagem Página Contato"
                             className='w-2/3'
                         />
