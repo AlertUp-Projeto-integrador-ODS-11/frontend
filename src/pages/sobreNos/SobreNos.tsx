@@ -21,7 +21,7 @@ A Objetivo de Desenvolvimento Sustentável (ODS) 11 da ONU visa tornar as cidade
 
                     <div className="flex justify-center ">
                         <img
-                            src="./src/assets/team-work-animate.svg"
+                            src="/images/team-work-animate.svg"
                             alt="Imagem Página Sobre nós"
                             className='w-2/3'
                         />
