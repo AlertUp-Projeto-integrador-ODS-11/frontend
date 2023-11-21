@@ -29,7 +29,7 @@ function DeletarPostagem() {
             })
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                toastAlerta('O token expirou, favor logar novamente', "erro")
+                toastAlerta('Token expirado. Por favor, faça login novamente!', "erro")
                 handleLogout()
             }
         }
@@ -37,7 +37,7 @@ function DeletarPostagem() {
 
     useEffect(() => {
         if (token === '') {
-            toastAlerta('Você precisa estar logado', "erro")
+            toastAlerta('Você precisa estar logado para utilizar essa funcionalidade.', "erro")
             navigate('/login')
         }
     }, [token])
@@ -58,10 +58,10 @@ function DeletarPostagem() {
                 }
             })
 
-            toastAlerta('Postagem apagada com sucesso', "info")
+            toastAlerta('Postagem apagada com sucesso!', "sucesso")
 
         } catch (error) {
-            toastAlerta('Erro ao apagar a Postagem', "erro")
+            toastAlerta('Erro ao apagar a postagem. Tente novamente!', "erro")
         }
 
         setIsLoading(false)

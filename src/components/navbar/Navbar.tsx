@@ -1,13 +1,14 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Home, Mail, PlusCircle, Users, LogOut } from 'react-feather';
 import { Chats, Cards, PlusSquare } from "@phosphor-icons/react";
+import { toastAlerta } from "../../utils/toastAlerta";
 
 function Navbar (){
 
     const navigate = useNavigate();
 
     function logout(){
-        alert("Usuário deslogado com sucesso!");
+        toastAlerta("Usuário deslogado com sucesso!", "sucesso");
         navigate("/")
     }
 

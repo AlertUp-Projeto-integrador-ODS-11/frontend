@@ -3,8 +3,9 @@ import { RotatingLines } from 'react-loader-spinner'
 import { useNavigate } from 'react-router-dom'
 
 import { cadastrarUsuario } from '../../services/Service'
-import Usuario from '../../models/Usuario'
 
+import Usuario from '../../models/Usuario'
+import { toastAlerta } from "../../utils/toastAlerta";
 import './Cadastro.css'
 
 function Cadastro() {
@@ -52,14 +53,14 @@ function Cadastro() {
 
       try {
         await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuario)
-        alert('Usuário cadastrado com sucesso')
+        toastAlerta('Usuário cadastrado com sucesso!', "sucesso")
 
       } catch (error) {
-        alert('Erro ao cadastrar o Usuário')
+        toastAlerta('Erro ao cadastrar o usuário. Tente novamente!', "erro")
       }
 
     } else {
-      alert('Dados inconsistentes. Verifique as informações de cadastro.')
+      toastAlerta('Dados inconsistentes. Verifique as informações de cadastro!', "erro")
       setUsuario({ ...usuario, senha: "" })
       setConfirmaSenha("")
     }
@@ -88,7 +89,7 @@ function Cadastro() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="usuario">Usuario</label>
+            <label htmlFor="usuario">Usuário</label>
             <input
               type="text"
               id="email"

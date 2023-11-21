@@ -28,7 +28,7 @@ function ListaPostagens() {
 
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                toastAlerta('O token expirou, favor logar novamente', "erro")
+                toastAlerta('Token expirado. Por favor, faça login novamente!', "erro")
                 handleLogout()
             }
         }
@@ -36,7 +36,7 @@ function ListaPostagens() {
 
     useEffect(() => {
         if (token === '') {
-            toastAlerta('Você precisa estar logado', "erro")
+            toastAlerta('Você precisa estar logado para utilizar essa funcionalidade.', "erro")
             navigate('/');
         }
     }, [token])
@@ -59,7 +59,7 @@ function ListaPostagens() {
             )}
 
             <div className='container mx-auto my-4 
-            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+            flex flex-col justify-center items-center gap-4'>
 
                 {postagens.map((postagem) => (
                     <CardPostagens key={postagem.id} post={postagem} />
@@ -69,5 +69,7 @@ function ListaPostagens() {
         </>
     )
 }
+
+//container mx-auto mt-24 flex flex-col justify-center items-center
 
 export default ListaPostagens

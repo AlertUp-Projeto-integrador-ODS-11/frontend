@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import { ToastContainer } from 'react-toastify';
 
 import Home from './pages/home/Home';
 import Login from './pages/login/Login';
@@ -14,10 +15,13 @@ import DeletarTema from './components/temas/deletarTema/DeletarTema';
 import ListaPostagens from "./components/postagens/listaPostagens/ListaPostagens.tsx";
 import FormularioPostagem from "./components/postagens/formularioPostagem/FormularioPostagem.tsx";
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem.tsx';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
     <AuthProvider>
+    <ToastContainer />
       <BrowserRouter>
         <Navbar />
           <div className='min-h-[80vh]'>

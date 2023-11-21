@@ -7,22 +7,26 @@ interface CardPostagensProps {
 
 function CardPostagens({ post }: CardPostagensProps) {
     return (
-        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
+        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between w-3/5'>
             <div>
                 <div className="flex w-full bg-secondary py-2 px-4 items-center gap-4">
                     <img src={post.user?.foto} className='h-12 rounded-full'
                          alt="Imagem do Usuário" />
-                    <h3 className='text-lg text-white font-bold text-center uppercase'>{post.user?.nome}</h3>
+                    <div className="justify-start">
+                        <h3 className='text-lg text-white font-bold uppercase'>{post.user?.nome}</h3>
+                        <p>Município: {post.municipio}</p>
+                        <p className="text-sm">{new Intl.DateTimeFormat(undefined, {
+                            dateStyle: 'full',
+                            timeStyle: 'short',
+                        }).format(new Date(post.data))}</p>
+                    </div>
                 </div>
+                
                 <div className='p-4'>
+                    <p>Tema: {post.tema?.titulo}</p>
                     <h4 className='text-lg font-semibold uppercase'>{post.titulo}</h4>
                     <p>{post.descricao}</p>
-                    <p>Tema: {post.tema?.titulo}</p>
-                    <p>Município: {post.municipio}</p>
-                    <p>Data: {new Intl.DateTimeFormat(undefined, {
-                        dateStyle: 'full',
-                        timeStyle: 'medium',
-                    }).format(new Date(post.data))}</p>
+                        <img src={post.foto} alt="foto da postagem" className='object-fill h-96 max-w-full '/>
                 </div>
             </div>
             <div className="flex">

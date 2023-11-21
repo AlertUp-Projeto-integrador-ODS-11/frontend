@@ -4,6 +4,7 @@ import { Oval } from 'react-loader-spinner';
 
 import { buscar } from '../../../services/Service';
 import { AuthContext } from '../../../contexts/AuthContext';
+import {toastAlerta} from "../../../utils/toastAlerta.ts";
 
 import Tema from '../../../models/Tema';
 import CardTemas from '../cardTema/CardTema';
@@ -24,7 +25,7 @@ function ListaTemas() {
             })
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                alert('O token expirou, favor logar novamente')
+                toastAlerta('Token expirado. Por favor, faça login novamente!', "info")
                 handleLogout()
             }
         }
@@ -32,7 +33,7 @@ function ListaTemas() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado');
+            toastAlerta('Você precisa estar logado para utilizar essa funcionalidade.', "erro")
             navigate('/login');
         }
     }, [token])

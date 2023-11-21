@@ -7,7 +7,7 @@ import { AuthContext } from '../../../contexts/AuthContext';
 
 import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
-import {toastAlerta} from "../../../utils/toastAlerta.ts";
+import { toastAlerta } from "../../../utils/toastAlerta.ts";
 
 function FormularioPostagem() {
 
@@ -50,7 +50,7 @@ function FormularioPostagem() {
 
     useEffect(() => {
         if (token === '') {
-            toastAlerta('Você precisa estar logado', "erro");
+            toastAlerta('Você precisa estar logado para utilizar essa funcionalidade.', "erro");
             navigate('/');
         }
     }, [token])
@@ -95,14 +95,14 @@ function FormularioPostagem() {
                     },
                 });
 
-                toastAlerta('Postagem atualizada com sucesso', "sucesso")
+                toastAlerta('Postagem atualizada com sucesso!', "sucesso")
 
             } catch (error: any) {
                 if (error.toString().includes('403')) {
-                    toastAlerta('O token expirou, favor logar novamente', "sucesso")
+                    toastAlerta('Token expirado. Por favor, faça login novamente!', "info")
                     handleLogout()
                 } else {
-                    toastAlerta('Erro ao atualizar a Postagem', "erro")
+                    toastAlerta('Erro ao atualizar a postagem. Tente novamente!', "erro")
                 }
             }
 
@@ -114,14 +114,14 @@ function FormularioPostagem() {
                     },
                 })
 
-                toastAlerta('Postagem cadastrada com sucesso', "sucesso");
+                toastAlerta('Postagem cadastrada com sucesso!', "sucesso");
 
             } catch (error: any) {
                 if (error.toString().includes('403')) {
-                    toastAlerta('O token expirou, favor logar novamente', "erro")
+                    toastAlerta('Token expirado. Por favor, faça login novamente!', "info")
                     handleLogout()
                 } else {
-                    toastAlerta('Erro ao cadastrar a Postagem', "erro");
+                    toastAlerta('Erro ao cadastrar a postagem. Tente novamente!', "erro");
                 }
             }
         }
@@ -137,17 +137,17 @@ function FormularioPostagem() {
     return (
         <div className="container flex flex-col mx-auto items-center">
             <h1 className="text-4xl text-center my-8">
-                {id !== undefined ? 'Editar Postagem' : 'Cadastrar Postagem'}
+                {id !== undefined ? 'Editar postagem' : 'Cadastrar postagem'}
             </h1>
 
             <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovaPostagem}>
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="titulo">Título da Postagem</label>
+                    <label htmlFor="titulo">Título da postagem</label>
                     <input
                         value={postagem.titulo}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="Insira aqui o Título"
+                        placeholder="Insira aqui o título"
                         name="titulo"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -155,12 +155,12 @@ function FormularioPostagem() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="descricao">Texto da Postagem</label>
+                    <label htmlFor="descricao">Texto da postagem</label>
                     <input
                         value={postagem.descricao}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="Adicione aqui o Texto da Postagem"
+                        placeholder="Adicione aqui o texto da postagem"
                         name="descricao"
                         required
                         className="border-2 border-slate-700 rounded p-2"
@@ -168,25 +168,24 @@ function FormularioPostagem() {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="relevancia">Relevancia da Postagem</label>
+                    <label htmlFor="foto">Mídia da postagem</label>
                     <input
-                        value={postagem.relevancia}
+                        value={postagem.foto}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-                        type="number"
-                        placeholder="Adicione aqui o relevancia da Postagem"
-                        name="relevancia"
-                        required
+                        type="url"
+                        placeholder="Adicione aqui a url da imagem"
+                        name="foto"
                         className="border-2 border-slate-700 rounded p-2"
                     />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label htmlFor="municipio">Municipio da Postagem</label>
+                    <label htmlFor="municipio">Município da Postagem</label>
                     <input
                         value={postagem.municipio}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         type="text"
-                        placeholder="Adicione aqui o municipio da Postagem"
+                        placeholder="Adicione aqui o município da postagem"
                         name="municipio"
                         required
                         className="border-2 border-slate-700 rounded p-2"

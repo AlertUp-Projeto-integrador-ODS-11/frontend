@@ -5,6 +5,7 @@ import { buscar, deletar } from "../../../services/Service";
 import { AuthContext } from "../../../contexts/AuthContext";
 
 import Tema from "../../../models/Tema";
+import {toastAlerta} from "../../../utils/toastAlerta.ts";
 import { RotatingLines } from "react-loader-spinner";
 
 function DeletarTema() {
@@ -28,7 +29,7 @@ function DeletarTema() {
             })
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                alert('O token expirou, favor logar novamente')
+                toastAlerta('Token expirado. Por favor, faça login novamente!', "erro")
                 handleLogout()
             }
         }
@@ -36,7 +37,7 @@ function DeletarTema() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado')
+            toastAlerta('Você precisa estar logado para utilizar essa funcionalidade.', "erro")
             navigate('/login')
         }
     }, [token])
@@ -57,10 +58,10 @@ function DeletarTema() {
                 }
             })
 
-            alert('Tema apagado com sucesso')
+            toastAlerta('Tema apagada com sucesso!', "sucesso")
 
         } catch (error) {
-            alert('Erro ao apagar o Tema')
+            toastAlerta('Erro ao apagar tema. Tente novamente!', "erro")
         }
 
         setIsLoading(false)
@@ -73,7 +74,7 @@ function DeletarTema() {
 
     return (
         <div className='container w-1/3 mx-auto'>
-            <h1 className='text-4xl text-center my-4'>Deletar Tema</h1>
+            <h1 className='text-4xl text-center my-4'>Deletar tema</h1>
 
             <p className='text-center font-semibold mb-4'>
                 Você tem certeza de que deseja apagar o tema a seguir?

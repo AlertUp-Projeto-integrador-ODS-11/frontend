@@ -5,52 +5,52 @@ export function toastAlerta(mensagem: string, tipo: string) {
 
         case 'sucesso':
             toast.success(mensagem, {
-                position: 'top-right',
-                autoClose: 2000,
+                position: 'top-center',
+                autoClose: 1500,
                 hideProgressBar: false,
-                closeOnClick: true,
+                closeOnClick: false,
                 pauseOnHover: false,
                 draggable: false,
-                theme: 'colored',
+                theme: 'light',
                 progress: undefined,
             });
             break;
 
         case 'info':
             toast.info(mensagem, {
-                position: 'top-right',
-                autoClose: 2000,
+                position: 'top-center',
+                autoClose: 1500,
                 hideProgressBar: false,
-                closeOnClick: true,
+                closeOnClick: false,
                 pauseOnHover: false,
                 draggable: false,
-                theme: 'colored',
+                theme: 'light',
                 progress: undefined,
             });
             break;
 
         case 'erro':
             toast.error(mensagem, {
-                position: 'top-right',
-                autoClose: 2000,
+                position: 'top-center',
+                autoClose: 1500,
                 hideProgressBar: false,
-                closeOnClick: true,
+                closeOnClick: false,
                 pauseOnHover: false,
                 draggable: false,
-                theme: 'colored',
+                theme: 'light',
                 progress: undefined,
             });
             break;
 
         default:
             toast.info(mensagem, {
-                position: 'top-right',
-                autoClose: 2000,
+                position: 'top-center',
+                autoClose: 1500,
                 hideProgressBar: false,
-                closeOnClick: true,
+                closeOnClick: false,
                 pauseOnHover: false,
                 draggable: false,
-                theme: 'colored',
+                theme: 'light',
                 progress: undefined,
             });
             break;
