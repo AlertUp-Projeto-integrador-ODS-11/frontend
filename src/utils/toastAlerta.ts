@@ -7,7 +7,7 @@ export function toastAlerta(mensagem: string, tipo: string) {
             toast.success(mensagem, {
                 position: 'top-center',
                 autoClose: 1500,
-                hideProgressBar: false,
+                hideProgressBar: true,
                 closeOnClick: false,
                 pauseOnHover: false,
                 draggable: false,
@@ -20,7 +20,7 @@ export function toastAlerta(mensagem: string, tipo: string) {
             toast.info(mensagem, {
                 position: 'top-center',
                 autoClose: 1500,
-                hideProgressBar: false,
+                hideProgressBar: true,
                 closeOnClick: false,
                 pauseOnHover: false,
                 draggable: false,
@@ -33,7 +33,7 @@ export function toastAlerta(mensagem: string, tipo: string) {
             toast.error(mensagem, {
                 position: 'top-center',
                 autoClose: 1500,
-                hideProgressBar: false,
+                hideProgressBar: true,
                 closeOnClick: false,
                 pauseOnHover: false,
                 draggable: false,
@@ -46,7 +46,7 @@ export function toastAlerta(mensagem: string, tipo: string) {
             toast.info(mensagem, {
                 position: 'top-center',
                 autoClose: 1500,
-                hideProgressBar: false,
+                hideProgressBar: true,
                 closeOnClick: false,
                 pauseOnHover: false,
                 draggable: false,
