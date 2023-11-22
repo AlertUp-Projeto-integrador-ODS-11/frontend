@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Dna } from 'react-loader-spinner';
+import { Oval } from 'react-loader-spinner';
 
 import { buscar } from '../../../services/Service';
 import { AuthContext } from '../../../contexts/AuthContext';
@@ -48,18 +48,24 @@ function ListaPostagens() {
     return (
         <>
             {postagens.length === 0 && (
-                <Dna
-                    visible={true}
-                    height="200"
-                    width="200"
-                    ariaLabel="dna-loading"
+                <div className='flex justify-center w-full absolute top-2/3'>
+                <Oval
+                    height={80}
+                    width={80}
+                    color="#F95D0C"
                     wrapperStyle={{}}
-                    wrapperClass="dna-wrapper mx-auto"
+                    wrapperClass=""
+                    visible={true}
+                    ariaLabel='oval-loading'
+                    secondaryColor="#FFFF"
+                    strokeWidth={2}
+                    strokeWidthSecondary={2}
                 />
+              </div>
             )}
 
             <div className='container mx-auto my-4 
-            flex flex-col justify-center items-center gap-4'>
+            flex flex-col-reverse justify-center items-center gap-4'>
 
                 {postagens.map((postagem) => (
                     <CardPostagens key={postagem.id} post={postagem} />

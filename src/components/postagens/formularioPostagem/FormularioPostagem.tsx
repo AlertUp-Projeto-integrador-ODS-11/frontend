@@ -79,6 +79,15 @@ function FormularioPostagem() {
         });
     }
 
+    function atualizarEstadoArea(e: ChangeEvent<HTMLTextAreaElement>) {
+        setPostagem({
+            ...postagem,
+            [e.target.name]: e.target.value,
+            tema: tema,
+            user: usuario,
+        });
+    }
+
     function retornar() {
         navigate('/postagens');
     }
@@ -156,10 +165,9 @@ function FormularioPostagem() {
 
                 <div className="flex flex-col gap-2">
                     <label htmlFor="descricao">Texto da postagem</label>
-                    <input
+                    <textarea
                         value={postagem.descricao}
-                        onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
-                        type="text"
+                        onChange={(e: ChangeEvent<HTMLTextAreaElement>) => atualizarEstadoArea(e)}
                         placeholder="Adicione aqui o texto da postagem"
                         name="descricao"
                         required
@@ -208,8 +216,8 @@ function FormularioPostagem() {
                 <button
                     type='submit'
                     disabled={carregandoTema}
-                    className='flex justify-center rounded disabled:bg-slate-200 bg-indigo-400 
-                            hover:bg-indigo-800 text-white font-bold w-1/2 mx-auto py-2'
+                    className='flex justify-center rounded disabled:bg-primary bg-primary hover:bg-[#FEA235] 
+                    font-bold w-1/2 mx-auto py-2'
                 >
                     {isLoading ?
                         <RotatingLines

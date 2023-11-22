@@ -36,19 +36,22 @@ function Login() {
 
     return ( 
         <>
-            <div className="h-screen place-items-center font-bold bg-gradient-to-t from-[#e9a028] to-[#ff5b22] ...">
+            <div className="h-screen place-items-center bg-secondary">
                 <div className="flex justify-center">
-                <div className="flex justify-center bg-[#fcfaf5e1] p-20 m-12 rounded-[15px]">
+                <div className="flex justify-center bg-tertiary p-20 m-12 rounded-[15px]">
                 <form className="flex justify-center items-center flex-col w-full gap-6" onSubmit={login}>
-                    <h2 className="text-[#FF5B22] text-5xl ">Entrar</h2>
+                    <img 
+                    src='/images/alertup-laranja.png'
+                    className="h-12"/>
+                    <p className="font-bold">Seja muito bem-vindo!</p>
                     <div className="flex flex-col w-full">
                         <label htmlFor="email">Usuário</label>
                         <input
                             type="text"
                             id="email"
                             name="email"
-                            placeholder="Usuario"
-                            className="border-1 border-slate-700 rounded p-2"
+                            placeholder="endereço de e-mail"
+                            className="border border-[#F95D0C] rounded p-2"
                             value={usuarioLogin.email}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
@@ -59,8 +62,8 @@ function Login() {
                             type="password"
                             id="senha"
                             name="senha"
-                            placeholder="Senha"
-                            className="border-1 border-slate-700 rounded p-2"
+                            placeholder="senha"
+                            className="border border-[#F95D0C] rounded p-2"
                             value={usuarioLogin.senha} 
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
@@ -79,9 +82,9 @@ function Login() {
                             <span>Entrar</span>}
                     </button>
 
-                    <hr className="border-orange-500 w-full" />
+                    <hr className="bg-[#000000] w-full" />
 
-                    <p>
+                    <p className="text-gray-600">
                         Ainda não tem uma conta?{' '}
                         <Link to="/cadastro" className="text-[#FF5B22] hover:underline">
                             Cadastre-se

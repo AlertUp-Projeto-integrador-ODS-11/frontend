@@ -75,14 +75,20 @@ function Cadastro() {
         <form
           className='flex justify-center items-center flex-col w-2/3 gap-3'
           onSubmit={cadastrarNovoUsuario}>
-          <h2 className='text-slate-900 text-5xl'>Cadastrar</h2>
+          
+          <img 
+          src='/images/alertup-laranja.png'
+          className="h-14"/>
+          
+          <h2 className="font-bold text-2xl text-gray-600">Cadastre-se e faça a sua denúncia</h2>
+          
           <div className="flex flex-col w-full">
             <label htmlFor="nome">Nome</label>
             <input
               type="text"
               id="nome"
               name="nome"
-              placeholder="Nome"
+              placeholder="seu nome"
               className="border-2 border-slate-700 rounded p-2"
               value={usuario.nome}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -94,7 +100,7 @@ function Cadastro() {
               type="text"
               id="email"
               name="email"
-              placeholder="Email"
+              placeholder="endereço de e-mail"
               className="border-2 border-slate-700 rounded p-2"
               value={usuario.email}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -106,19 +112,19 @@ function Cadastro() {
               type="text"
               id="foto"
               name="foto"
-              placeholder="Foto"
+              placeholder="foto de perfil"
               className="border-2 border-slate-700 rounded p-2"
               value={usuario.foto}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="foto">Municipio</label>
+            <label htmlFor="foto">Município</label>
             <input
               type="text"
               id="municipio"
               name="municipio"
-              placeholder="Municipio"
+              placeholder="seu município"
               className="border-2 border-slate-700 rounded p-2"
               value={usuario.municipio}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
@@ -130,19 +136,19 @@ function Cadastro() {
               type="password"
               id="senha"
               name="senha"
-              placeholder="Senha"
+              placeholder="senha"
               className="border-2 border-slate-700 rounded p-2"
               value={usuario.senha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
           <div className="flex flex-col w-full">
-            <label htmlFor="confirmarSenha">Confirmar Senha</label>
+            <label htmlFor="confirmarSenha">Confirmar senha</label>
             <input
               type="password"
               id="confirmarSenha"
               name="confirmarSenha"
-              placeholder="Confirmar Senha"
+              placeholder="confirme sua senha"
               className="border-2 border-slate-700 rounded p-2"
               value={confirmaSenha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleConfirmarSenha(e)}
@@ -150,12 +156,12 @@ function Cadastro() {
           </div>
           <div className="flex justify-around w-full gap-8">
             <button
-              className='rounded text-white bg-red-400 hover:bg-[#fa023c] w-1/2 py-2'
+              className='rounded border-2 border-[#F95D0C] hover:bg-[#E4E4E4] w-1/2 py-2'
               onClick={retornar}>
               Cancelar
             </button>
             <button
-              className='rounded text-white bg-[#3d9666] hover:bg-[#0e3112] w-1/2 py-2 flex justify-center'
+              className='rounded text-white bg-primary hover:bg-[#FEA235] w-1/2 py-2 flex justify-center'
               type='submit'>
               {isLoading ? <RotatingLines
                 strokeColor="white"

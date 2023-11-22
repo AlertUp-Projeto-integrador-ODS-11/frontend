@@ -55,6 +55,13 @@ function FormularioTema() {
         })
     }
 
+    function atualizarEstadoArea(e: ChangeEvent<HTMLTextAreaElement>) {
+        setTema({
+            ...tema,
+            [e.target.name]: e.target.value
+        })
+    }
+
     async function gerarNovoTema(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
         setIsLoading(true)
@@ -124,18 +131,17 @@ function FormularioTema() {
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                     />
                      <label htmlFor="descricao">Descrição do tema</label>
-                    <input
-                        type="text"
+                    <textarea
                         placeholder="Descreva aqui seu tema"
                         name='descricao'
                         className="border-2 border-slate-700 rounded p-2"
                         value={tema.descricao}
-                        onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+                        onChange={(e: ChangeEvent<HTMLTextAreaElement>) => atualizarEstadoArea(e)}
                     />
                 </div>
                 <button
-                    className="rounded text-slate-100 bg-indigo-400 
-                    hover:bg-indigo-800 w-1/2 py-2 mx-auto flex justify-center" type="submit">
+                    className="rounded font-bold bg-primary hover:bg-[#FEA235] 
+                    w-1/2 py-2 mx-auto flex justify-center" type="submit">
 
                     {isLoading ?
                         <RotatingLines

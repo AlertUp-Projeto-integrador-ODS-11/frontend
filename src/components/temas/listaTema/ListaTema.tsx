@@ -48,17 +48,17 @@ function ListaTemas() {
             {temas.length === 0 && (
                 <div className='flex justify-center w-full absolute top-1/2'>
                 <Oval
-                height={80}
-                width={80}
-                color="#4fa94d"
-                wrapperStyle={{}}
-                wrapperClass=""
-                visible={true}
-                ariaLabel='oval-loading'
-                secondaryColor="#4fa94d"
-                strokeWidth={2}
-                strokeWidthSecondary={2}             
-              />
+                    height={80}
+                    width={80}
+                    color="#F95D0C"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                    ariaLabel='oval-loading'
+                    secondaryColor="#FFFF"
+                    strokeWidth={2}
+                    strokeWidthSecondary={2}
+                />
               </div>
             )}
 

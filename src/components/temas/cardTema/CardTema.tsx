@@ -8,7 +8,7 @@ interface CardTemasProps {
 function CardTemas({ tema }: CardTemasProps) {
     return (
         <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
-            <header className='py-2 px-6 bg-secondary text-white font-bold text-2xl'>
+            <header className='py-2 px-6 bg-white font-bold text-2xl'>
                 {tema.titulo}
             </header>
 
@@ -18,13 +18,13 @@ function CardTemas({ tema }: CardTemasProps) {
 
             <div className="flex">
                 <Link to={`/editarTema/${tema.id}`}
-                    className='w-full text-slate-100 bg-secondary hover:bg-orange-600
+                    className='w-full font-bold w-full bg-white hover:bg-[#E4E4E4]
                         flex items-center justify-center py-2'>
                     <button>Editar</button>
                 </Link>
 
                 <Link to={`/deletarTema/${tema.id}`}
-                    className='text-slate-100 bg-red-600 hover:bg-red-800 w-full 
+                    className='bg-primary hover:bg-[#FEA235] font-bold w-full 
                         flex items-center justify-center'>
                     <button>Deletar</button>
                 </Link>
