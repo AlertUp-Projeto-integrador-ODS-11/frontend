@@ -25,8 +25,8 @@ function Navbar() {
                 flex justify-center py-5'>
 
                 <div className="container justify-between flex items-center ... text-lg ">
-                    <Link to='/home' title="Home" className='hover:opacity-70'>
-                        <img src="/images/alertup-logo.png" alt="AlertUp Logo" className="h-12 mr-4" /> </Link>
+                    <Link to='/home' title="Home" className='hover:opacity-80'>
+                        <img src="/images/Alertup-icone-roxo.png" alt="AlertUp Logo" className="h-12 mr-4" /> </Link>
 
                     <div className="flex gap-6 ">
                         <Link to='/postagens' className='hover:underline'>Postagens</Link>
