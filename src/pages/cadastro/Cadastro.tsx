@@ -70,18 +70,18 @@ function Cadastro() {
 
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold">
+      <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center">
         <div className="fundoCadastro hidden lg:block"></div>
         <form
           className='flex justify-center items-center flex-col w-2/3 gap-3'
           onSubmit={cadastrarNovoUsuario}>
-          
-          <img 
-          src='/images/alertup-laranja.png'
-          className="h-14"/>
-          
-          <h2 className="font-bold text-2xl text-gray-600">Cadastre-se e faça a sua denúncia</h2>
-          
+
+          <img
+            src='/images/Alertup-laranja-v2.png'
+            className="h-16" />
+
+          <h2 className="font-bold text-2xl text-[#585659]">Cadastre-se e faça a sua denúncia</h2>
+
           <div className="flex flex-col w-full">
             <label htmlFor="nome">Nome</label>
             <input
@@ -89,7 +89,7 @@ function Cadastro() {
               id="nome"
               name="nome"
               placeholder="seu nome"
-              className="border-2 border-slate-700 rounded p-2"
+              className="border border-[#F95D0C] rounded p-2"
               value={usuario.nome}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -101,7 +101,7 @@ function Cadastro() {
               id="email"
               name="email"
               placeholder="endereço de e-mail"
-              className="border-2 border-slate-700 rounded p-2"
+              className="border border-[#F95D0C] rounded p-2"
               value={usuario.email}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -113,7 +113,7 @@ function Cadastro() {
               id="foto"
               name="foto"
               placeholder="foto de perfil"
-              className="border-2 border-slate-700 rounded p-2"
+              className="border border-[#F95D0C] rounded p-2"
               value={usuario.foto}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -125,7 +125,7 @@ function Cadastro() {
               id="municipio"
               name="municipio"
               placeholder="seu município"
-              className="border-2 border-slate-700 rounded p-2"
+              className="border border-[#F95D0C] rounded p-2"
               value={usuario.municipio}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -137,7 +137,7 @@ function Cadastro() {
               id="senha"
               name="senha"
               placeholder="senha"
-              className="border-2 border-slate-700 rounded p-2"
+              className="border border-[#F95D0C] rounded p-2"
               value={usuario.senha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
@@ -149,14 +149,14 @@ function Cadastro() {
               id="confirmarSenha"
               name="confirmarSenha"
               placeholder="confirme sua senha"
-              className="border-2 border-slate-700 rounded p-2"
+              className="border border-[#F95D0C] rounded p-2"
               value={confirmaSenha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => handleConfirmarSenha(e)}
             />
           </div>
-          <div className="flex justify-around w-full gap-8">
+          <div className="flex justify-around w-full gap-8 mt-6">
             <button
-              className='rounded border-2 border-[#F95D0C] hover:bg-[#E4E4E4] w-1/2 py-2'
+              className='rounded border-2 border-[#585659] hover:bg-[#E4E4E4] w-1/2 py-2'
               onClick={retornar}>
               Cancelar
             </button>
@@ -176,6 +176,7 @@ function Cadastro() {
         </form>
       </div>
     </>
-  )}
+  )
+}
 
 export default Cadastro
