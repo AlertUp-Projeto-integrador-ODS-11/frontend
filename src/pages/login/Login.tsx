@@ -42,8 +42,8 @@ function Login() {
                 <form className="flex justify-center items-center flex-col w-full gap-6" onSubmit={login}>
                     <img 
                     src='/images/alertup-laranja.png'
-                    className="h-12"/>
-                    <p className="font-bold">Seja muito bem-vindo!</p>
+                    className="h-16"/>
+                    <p className="font-bold text-[#585659] text-xl">Seja muito bem-vindo!</p>
                     <div className="flex flex-col w-full">
                         <label htmlFor="email">Usuário</label>
                         <input

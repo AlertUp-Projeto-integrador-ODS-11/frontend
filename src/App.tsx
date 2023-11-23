@@ -17,6 +17,7 @@ import FormularioPostagem from "./components/postagens/formularioPostagem/Formul
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem.tsx';
 import Perfil from './pages/perfil/Perfil';
 import 'react-toastify/dist/ReactToastify.css';
+import Temas from './pages/temas/Temas.tsx';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
               <Route path="/SobreNos" element={<SobreNos />} />
               <Route path="/contato" element={<Contato />} />
               <Route path="/perfil" element={<Perfil />} />
+              <Route path="/verTemas" element={<Temas />} />
             </Routes>
           </div>  
         <Footer />

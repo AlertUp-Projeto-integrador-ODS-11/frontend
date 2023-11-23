@@ -7,7 +7,7 @@ interface CardPostagensProps {
 
 function CardPostagens({ post }: CardPostagensProps) {
     return (
-        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between w-3/5 bg-white '>
+        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between lg:w-2/4 sm:w-full bg-white '>
             <div>
                 <div className="flex w-full py-2 px-4 items-center gap-4">
                     <img src={post.user?.foto} className='h-12 rounded-full'

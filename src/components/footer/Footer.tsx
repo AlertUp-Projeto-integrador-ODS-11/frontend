@@ -13,7 +13,7 @@ function Footer() {
     if (usuario.token !== "") {
 
         component = (
-            <div className='w-full bg-secondary text-white flex justify-center py-5'>
+            <div className='w-full bg-secondary text-white flex justify-center py-5 px-10'>
 
                 <div className="container justify-between flex items-center ... text-lg ">
                     <Link to='/home' title="Home" className='hover:opacity-70'>
