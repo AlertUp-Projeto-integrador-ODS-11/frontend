@@ -18,6 +18,7 @@ import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPosta
 import Perfil from './pages/perfil/Perfil';
 import 'react-toastify/dist/ReactToastify.css';
 import Temas from './pages/temas/Temas.tsx';
+import Visitante from './pages/visitante/Visitante.tsx';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         <Navbar />
           <div className='min-h-[80vh]'>
             <Routes>
-              <Route path="/" element={<Login />} />
+              <Route path="/" element={<Visitante />} />
               <Route path="/login" element={<Login />} />
               <Route path="/home" element={<Home />} />
               <Route path="/cadastro" element={<Cadastro />} />

@@ -13,7 +13,7 @@ function Navbar() {
     function logout() {
         handleLogout()
         toastAlerta("Usuário deslogado com sucesso!", "sucesso");
-        navigate("/login")
+        navigate("/")
     }
 
     let component: ReactNode
