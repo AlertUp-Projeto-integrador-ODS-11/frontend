@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { ReactNode, useContext } from 'react';
-import { User } from 'react-feather';
-import { GitHub } from 'react-feather'
+import { ReactNode } from 'react';
+import { User, GitHub } from 'react-feather';
 import './Visitante.css'
 import CardVisitante from "./cardVisitante/CardVisitante";
+import CardPrefeitura from "./cardPrefeitura/CardPrefeitura";
+import { Parallax } from 'react-parallax';
 
 
 function Visitante() {
@@ -31,24 +32,49 @@ function Visitante() {
         conteudo = (
             <>
             <div className="bg-gradient-to-b from-[#F95D0C] to-[#FBB731]">    
-            <div className="flex justify-center">
+            <div className="flex justify-center w-100">
                 <div className='container'>
-                    <div className="flex flex-col gap-4 items-start justify-center py-20  ">
-                        <h1>Conheça o Alertup! </h1>
-                        <p className='text-xl text-[#585659]'>
+                    <div className="flex flex-col gap-4 items-start justify-center py-10">
+                        <div className="flex justify-center ">
+                        <h1 className='text-5xl font-bold text-white self-center'>Conheça o  </h1>
+                        <img src="https://i.imgur.com/7KjqdVu.png" className="max-w-xs ml-3" alt="logo Alertup" />
+                        </div>
+
+                        <p className='text-xl text-white mt-0'>
                         Conectando cidadãos, transformando cidades.
                         </p>
-                        <p>Promovemos a conexão entre o protagonismo dos moradores das cidades com os responsáveis pela segurança, qualidade, acessibilidade e infraestrutura.</p>
-                        <div className="flex justify-around gap-4">
-                            <Link to={`/cadastro`} className=' text-white font-bold w-full bg-secondary hover:bg-[#8b2681]
+
+                        <div className="flex">
+                        <p className='text-2xl text-white'>Promovemos a conexão entre o protagonismo <p> dos moradores das cidades 
+                           com os responsáveis pela <p> segurança, qualidade, acessibilidade e infraestrutura.</p> </p></p>
+                        </div>
+
+                        <div className="flex justify-around gap-4 mt-20">
+                            <Link to={`/cadastro`} className=' text-white text-2xl w-full bg-secondary hover:bg-[#8b2681]
                             flex items-start justify-center p-3 px-6 rounded-md '>
-                            <button>Criar Conta</button>
+                            <button>Crie sua Conta</button>
                             </Link>
-                        </div>                    
+
+                            
+                        </div>     
+                        <div className=''>
+
+
+            <div className="mt-20">
+                <img src="https://i.imgur.com/SMLmkuu.png" className="" alt="onibusLotadoP&B" />
+
+            <CardVisitante/>
+            </div>
+            <div className="mt-40">
+            <CardPrefeitura />
+            </div>
+            </div>               
                     </div>
                 </div>
             </div>
             </div>
+
+            
             </>
         )
 
