@@ -68,10 +68,11 @@ function Login() {
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
                         />
                     </div>
+                    <div className='flex justify-center gap-4 py-2 '>
                     <button
                         type='submit'
                         className="rounded bg-primary flex justify-center
-                                   hover:bg-[#fa023c] text-white w-1/2 py-2">
+                                   hover:bg-[#fa023c] text-white w-1/2 py-2 px-6">
                         {isLoading ? <RotatingLines
                             strokeColor="white"
                             strokeWidth="5"
@@ -79,8 +80,23 @@ function Login() {
                             width="24"
                             visible={true}
                         /> :
-                            <span>Entrar</span>}
+                           <span>Entrar</span>}
                     </button>
+                    
+                    <button
+                        type='submit'
+                        className="rounded bg-primary flex justify-center
+                                   hover:bg-[#fa023c] text-white w-1/2 py-2 px-6">
+                        {isLoading ? <RotatingLines
+                            strokeColor="white"
+                            strokeWidth="5"
+                            animationDuration="0.75"
+                            width="24"
+                            visible={true}
+                        /> :
+                        <Link to="/"> <span>Voltar</span></Link>}
+                    </button>
+                    </div>
 
                     <hr className="bg-[#000000] w-full" />
 
