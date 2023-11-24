@@ -57,22 +57,21 @@ function Visitante() {
 
                             
                         </div>     
-                        <div className=''>
+                        
 
 
             <div className="mt-20">
                 <img src="https://i.imgur.com/SMLmkuu.png" className="" alt="onibusLotadoP&B" />
+                </div>
 
             <CardVisitante/>
-            </div>
-            <div className="mt-40">
             <CardPrefeitura />
             </div>
             </div>               
                     </div>
                 </div>
-            </div>
-            </div>
+            
+           
 
             
             </>
