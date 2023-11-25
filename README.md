@@ -13,25 +13,20 @@ O frontend foi desenvolvido utilizando a tecnologia React e oferece uma interfac
 
 <br>
 
-**Equipe do Projeto:**
+## Equipe do Projeto:
 
-- [**Breno Henrique**](https://github.com/brenonsc)
-- [**Julia Alexandrino**](https://github.com/juhalexandrino)
-- [**Matheus Queiroz**](https://github.com/MatheusSQueiroz)
-- [**Paloma Ferreira**](https://github.com/Paloma-Ferreira)
-- [**Roniberto Rodrigues**](https://github.com/RoninZin)
-- [**Shomara Quispe**](https://github.com/ShomaraQuispe)
-- [**Victor Paliari**](https://github.com/victorpaliari)
+  | [<img src="https://avatars.githubusercontent.com/u/11530020?v=4" width=115><br><sub>Breno Henrique</sub>](https://github.com/brenonsc) | [<img src="https://media.licdn.com/dms/image/D4D03AQGoIVIx5R9Wpg/profile-displayphoto-shrink_400_400/0/1636665202433?e=1706140800&v=beta&t=38-kZ6p9TuHZj9mBep2KoouzfkFqrrKybbvvSdkQ7kI" width=115><br><sub>Julia Alexandrino</sub>](https://github.com/juhalexandrino) | [<img src="https://avatars.githubusercontent.com/u/102914299?v=4" width=115><br><sub>Matheus Queiroz</sub>](https://github.com/MatheusSQueiroz) | [<img src="https://avatars.githubusercontent.com/u/85324161?v=4" width=115><br><sub>Shomara Quispe</sub>](https://github.com/ShomaraQuispe) | [<img src="https://avatars.githubusercontent.com/u/70173955?v=4" width=115><br><sub>Victor Paliari</sub>](https://github.com/victorpaliari) |
+  | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 
 <br>
 
-**Tecnologias Utilizadas:**
+## Tecnologias Utilizadas:
 
 - React
 
 <br>
 
-**Funcionalidades:**
+## Funcionalidades:
 
 - Registro e autenticação de usuários.
 - Criação e edição de denúncias.
