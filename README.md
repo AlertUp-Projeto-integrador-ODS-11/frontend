@@ -1,7 +1,7 @@
 # AlertUp - Frontend :earth_americas::leaves:
 ![License](https://badgen.net/badge/License/MIT/purple?icon=)
 ![.React](https://badgen.net/badge/React.js/v18.0/blue?icon=)
-![.Tailwind](https://badgen.net/badge/Tailwind/v3.3/purple?icon=)
+![.Tailwind](https://badgen.net/badge/Tailwind/v3.3/blue?icon=)
 
 Este é o repositório do frontend do projeto **AlertUp**, uma rede social voltada para denúncias de situações cotidianas relacionadas ao Objetivo de Desenvolvimento Sustentável (ODS) 11 da ONU. Nosso objetivo é criar uma plataforma que permita aos cidadãos denunciar problemas urbanos, promovendo um ambiente urbano mais sustentável e melhorando a qualidade de vida nas cidades.
 
