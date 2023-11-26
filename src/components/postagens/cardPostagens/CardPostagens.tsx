@@ -7,7 +7,8 @@ interface CardPostagensProps {
 
 function CardPostagens({ post }: CardPostagensProps) {
     return (
-        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between lg:w-2/4 sm:w-full bg-white '>
+        <div className='px-8 py-6 flex justify-center lg:w-2/4 sm:w-full'>
+        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between shadow-md  bg-white'>
             <div>
                 <div className="flex w-full py-2 px-4 items-center gap-4">
                     <img src={post.user?.foto} className='h-12 rounded-full'
@@ -16,16 +17,16 @@ function CardPostagens({ post }: CardPostagensProps) {
                         <h3 className='text-lg font-bold uppercase'>{post.user?.nome}</h3>
                         <p>Município: {post.municipio}</p>
                         <p className="text-sm">{new Intl.DateTimeFormat(undefined, {
-                            dateStyle: 'full',
+                            dateStyle: 'medium',
                             timeStyle: 'short',
                         }).format(new Date(post.data))}</p>
                     </div>
                 </div>
                 
                 <div className='p-4'>
-                    <h4 className='text-lg font-semibold uppercase'>{post.titulo}</h4>
+                    <h4 className='capitalize text-lg font-semibold'>{post.titulo}</h4>
                     <p>Tema: {post.tema?.titulo}</p>
-                    <p>{post.descricao}</p>
+                    <p className='py-2 pb-6'>{post.descricao}</p>
                     <img src={post.foto} alt="foto da postagem" className='object-fill h-full flex justify-center max-w-full '/>
                 </div>
 
@@ -42,6 +43,7 @@ function CardPostagens({ post }: CardPostagensProps) {
                 </Link>
             </div>
         </div>
+                            </div>
     )
 }
 

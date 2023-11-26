@@ -10,7 +10,7 @@ function ModalPostagem() {
             <Popup
                 trigger={
                     <button
-                    className='rounded bg-primary text-white py-2 px-4'>
+                    className='rounded bg-primary text-white py-2 px-4 hover:bg-[#FEA235]'>
                         Nova denúncia
                     </button>
                 }

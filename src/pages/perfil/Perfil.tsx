@@ -1,5 +1,6 @@
 import { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import { AuthContext } from '../../contexts/AuthContext'
 
@@ -26,15 +27,19 @@ function Perfil() {
 
              <div 
                 className="relative h-72 flex flex-col 
-                 text-white text-2xl items-start justify-center gap-3">
+                 text-white text-xl items-start justify-center gap-3">
                 <p className='font-bold text-3xl gap-3'>{usuario.nome} </p>             
-                <p className='text-xl'>{usuario.email}</p>
-                <p className='text-xl'>{usuario.municipio}</p>
-                <button className='rounded bg-primary text-white py-2 px-4 text-base font-bold'>
-                    Fazer Denúncia!
-                </button>
-                </div>
+                <p >{usuario.email}</p>
+                <p >{usuario.municipio}</p>
+                <div className="flex justify-around gap-4 text-sm">
+                    <Link to={`/cadastroPostagem`} className=' text-white font-bold w-full bg-primary hover:bg-[#FEA235]
+                            flex items-start justify-center p-3 px-6 rounded-md '>
+                            <button>Cadastrar Postagem</button>
+                    </Link>
+                    </div>
             </div>
+                
+                </div>
 
         </div>
     )

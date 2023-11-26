@@ -47,7 +47,7 @@ function Visitante() {
           <div className="container">
             <div className="flex flex-col gap-4 items-start justify-center py-10">
               <div className="flex justify-center">
-                <h1 className="text-5xl font-bold text-white self-center">
+                <h1 className="text-5xl font-bold text-white self-center pl-10">
                   Conheça o{" "}
                 </h1>
                 <img
@@ -57,12 +57,12 @@ function Visitante() {
                 />
               </div>
 
-              <p className="text-xl text-white mt-0">
+              <p className="text-xl text-white mt-0 px-10">
                 Conectando cidadãos, transformando cidades.
               </p>
 
               <div className="flex">
-                <p className="text-2xl text-white">
+                <p className="text-2xl text-white px-10">
                   Promovemos a conexão entre o protagonismo{" "}
                   <p>
                     {" "}
@@ -75,11 +75,11 @@ function Visitante() {
                 </p>
               </div>
 
-              <div className="flex justify-around gap-4 mt-20">
+              <div className="flex justify-around gap-4 mt-10 px-10 mb-20">
                 <Link
                   to={`/cadastro`}
-                  className=" text-white text-2xl w-full bg-secondary hover:bg-[#8b2681]
-                                                                flex items-start justify-center p-3 px-6 rounded-md "
+                  className=" text-white text-xl w-full bg-secondary hover:bg-[#8b2681]
+                  flex items-start justify-center p-3 rounded px-6"
                 >
                   <button>Crie sua Conta</button>
                 </Link>
@@ -96,11 +96,11 @@ function Visitante() {
           <CardPrefeitura />
         </Parallax>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center py-10">
           <div className="m-5">
             <Link
               to={`/cadastro`}
-              className=" text-white text-2xl bg-secondary hover:bg-[#8b2681]
+              className=" text-white text-xl bg-secondary hover:bg-[#8b2681]
                                             flex justify-center p-3 px-6 rounded-md "
             >
               <button>Crie sua Conta</button>
@@ -110,7 +110,7 @@ function Visitante() {
           <div className="m-5">
             <Link
               to={`/login`}
-              className=" text-white text-2xl bg-secondary hover:bg-[#8b2681]
+              className=" text-white text-xl bg-secondary hover:bg-[#8b2681]
                             flex justify-center p-3 px-6 rounded-md "
             >
               <button>Login</button>

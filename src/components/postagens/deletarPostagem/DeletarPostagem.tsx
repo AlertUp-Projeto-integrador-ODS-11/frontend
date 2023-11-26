@@ -85,7 +85,7 @@ function DeletarPostagem() {
                 <p>{postagem.titulo}</p>
                 </header>
 
-                <div className="p-4">
+                <div className="p-4 px-6">
                     <p>{postagem.descricao}</p>
                 </div>
                 <div className="flex">

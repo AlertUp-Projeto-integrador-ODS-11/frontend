@@ -213,23 +213,26 @@ function FormularioPostagem() {
                         ))}
                     </select>
                 </div>
+                
+                <div className='pb-8'>
                 <button
                     type='submit'
                     disabled={carregandoTema}
                     className='flex justify-center rounded disabled:bg-primary bg-primary hover:bg-[#FEA235] 
                     font-bold w-1/2 mx-auto py-2'
-                >
+                    >
                     {isLoading ?
                         <RotatingLines
-                            strokeColor="white"
-                            strokeWidth="5"
-                            animationDuration="0.75"
-                            width="24"
-                            visible={true}
+                        strokeColor="white"
+                        strokeWidth="5"
+                        animationDuration="0.75"
+                        width="24"
+                        visible={true}
                         /> :
                         <span>Confirmar</span>
                     }
                 </button>
+                    </div>
             </form>
         </div>
     )

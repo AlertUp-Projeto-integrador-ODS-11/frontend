@@ -80,7 +80,7 @@ function Cadastro() {
             src='/images/Alertup-laranja-v2.png'
             className="h-16" />
 
-          <h2 className="font-bold text-2xl text-[#585659]">Cadastre-se e faça a sua denúncia</h2>
+          <h2 className="pb-6 font-bold text-2xl text-[#585659]">Cadastre-se e faça a sua denúncia</h2>
 
           <div className="flex flex-col w-full">
             <label htmlFor="nome">Nome</label>
