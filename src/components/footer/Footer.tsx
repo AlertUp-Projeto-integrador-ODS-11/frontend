@@ -25,8 +25,8 @@ function Footer() {
 
 
                     <div className="flex gap-6 ">
-                        <Link to='/contato' className='hover:underline'>Contato</Link>
-                        <Link to='/sobrenos' className='hover:underline'>Equipe</Link>
+                        <Link to='/contato' className='hover:underline'>Equipe</Link>
+                        <Link to='/sobrenos' className='hover:underline'>Sobre nós</Link>
                         <Link to='https://github.com/AlertUp-Projeto-integrador-ODS-11' target="_blank" className='hover:opacity-70'><GitHub size={32} /></Link>
                     </div>
                 </div>

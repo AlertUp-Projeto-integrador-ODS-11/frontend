@@ -71,23 +71,16 @@ function Login() {
                     <div className='flex justify-center gap-4 py-2 '>
                     
                     <button
-                        type='submit'
+                        type='button'
                         className="rounded flex justify-center
                         border border-black hover:bg-[#E4E4E4] text-black w-1/2 py-2 px-6">
-                        {isLoading ? <RotatingLines
-                            strokeColor="white"
-                            strokeWidth="5"
-                            animationDuration="0.75"
-                            width="24"
-                            visible={true}
-                        /> :
-                        <Link to="/"> <span>Voltar</span></Link>}
+                        <Link to="/"> <span>Voltar</span></Link>
                     </button>
 
                         <button
                             type='submit'
                             className="rounded bg-primary flex justify-center
-                                       hover:bg-[#fa023c] text-white w-1/2 py-2 px-6">
+                                       hover:bg-secondary text-white w-1/2 py-2 px-6">
                             {isLoading ? <RotatingLines
                                 strokeColor="white"
                                 strokeWidth="5"

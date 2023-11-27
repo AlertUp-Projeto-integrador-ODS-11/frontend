@@ -42,7 +42,7 @@ function Visitante() {
 
   conteudo = (
     <>
-      <div className="bg-gradient-to-b from-[#F95D0C] to-[#FBB731]">
+      <div className="bg-[#F95D0C]">
         <div className="flex justify-center">
           <div className="container">
             <div className="flex flex-col gap-4 items-start justify-center py-10">
@@ -81,20 +81,22 @@ function Visitante() {
                   className=" text-white text-xl w-full bg-secondary hover:bg-[#8b2681]
                   flex items-start justify-center p-3 rounded px-6"
                 >
-                  <button>Crie sua Conta</button>
+                  <button>Crie sua conta</button>
                 </Link>
               </div>
             </div>
           </div>
         </div>
+
         <Parallax
-          bgImage="https://i.imgur.com/SMLmkuu.png"
-          strength={400}
+          bgImage="https://i.imgur.com/EleVi33.jpg"
+          strength={500}
           className="parallax-container"
         >
           <CardVisitante />
           <CardPrefeitura />
         </Parallax>
+        
 
         <div className="flex justify-center py-10">
           <div className="m-5">
@@ -103,7 +105,7 @@ function Visitante() {
               className=" text-white text-xl bg-secondary hover:bg-[#8b2681]
                                             flex justify-center p-3 px-6 rounded-md "
             >
-              <button>Crie sua Conta</button>
+              <button>Crie sua conta</button>
             </Link>
           </div>
 

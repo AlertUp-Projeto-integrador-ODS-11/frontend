@@ -5,7 +5,7 @@ import { Heart, Flag, ArrowCircleUp, PencilSimpleLine, Trash, ArrowBendDoubleUpL
 
 function CardVisitante() {
     return (
-        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between lg:w-2/4 sm:w-full bg-white m-20'>
+        <div className='border flex flex-col rounded-2xl overflow-hidden justify-between lg:w-2/4 sm:w-full bg-white ml-80 mb-20'>
             <div>
                 <div className="flex w-full py-2 px-4 items-center gap-4">
                     <img src="https://i.imgur.com/SEgeKqX.png" className='h-12 rounded-full'

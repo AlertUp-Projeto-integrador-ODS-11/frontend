@@ -3,7 +3,10 @@ import Postagem from '../../../models/Postagem'
 
 interface CardPostagensProps {
     post: Postagem
+    foto: string
 }
+
+
 
 function CardPostagens({ post }: CardPostagensProps) {
     return (
@@ -14,7 +17,7 @@ function CardPostagens({ post }: CardPostagensProps) {
                     <img src={post.user?.foto} className='h-12 rounded-full'
                          alt="Imagem do Usuário" />
                     <div className="justify-start">
-                        <h3 className='text-lg font-bold uppercase'>{post.user?.nome}</h3>
+                        <h3 className='text-lg font-bold normal-case'>{post.user?.nome}</h3>
                         <p>Município: {post.municipio}</p>
                         <p className="text-sm">{new Intl.DateTimeFormat(undefined, {
                             dateStyle: 'medium',
@@ -24,10 +27,11 @@ function CardPostagens({ post }: CardPostagensProps) {
                 </div>
                 
                 <div className='p-4'>
-                    <h4 className='capitalize text-lg font-semibold'>{post.titulo}</h4>
+                    <h4 className='normal-case text-lg font-semibold'>{post.titulo}</h4>
                     <p>Tema: {post.tema?.titulo}</p>
                     <p className='py-2 pb-6'>{post.descricao}</p>
-                    <img src={post.foto} alt="foto da postagem" className='object-fill h-full flex justify-center max-w-full '/>
+                    <img src={post.foto || 'https://i.imgur.com/v8YfH3E.png'} alt="foto da postagem" className='object-fill h-full flex justify-center max-w-full '/>
+                   
                 </div>
 
             </div>

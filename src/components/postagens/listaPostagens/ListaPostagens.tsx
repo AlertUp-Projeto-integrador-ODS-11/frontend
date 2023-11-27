@@ -8,8 +8,11 @@ import { AuthContext } from '../../../contexts/AuthContext';
 import Postagem from '../../../models/Postagem';
 import CardPostagens from '../cardPostagens/CardPostagens';
 import {toastAlerta} from "../../../utils/toastAlerta.ts";
+import ModalPostagem from '../modalPostagem/ModalPostagem.tsx';
+
 
 function ListaPostagens() {
+
 
     const navigate = useNavigate();
 
@@ -68,10 +71,11 @@ function ListaPostagens() {
             flex flex-col-reverse justify-center items-center gap-4'>
 
                 {postagens.map((postagem) => (
-                    <CardPostagens key={postagem.id} post={postagem} />
+                    <CardPostagens key={postagem.id} post={postagem} foto={postagem.foto}/>
                 ))}
 
             </div>
+            
         </>
     )
 }
