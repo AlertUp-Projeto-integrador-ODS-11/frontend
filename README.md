@@ -19,7 +19,9 @@ O frontend foi desenvolvido utilizando a tecnologia React e oferece uma interfac
     <img align='center' height='50' width='56' title='React' alt='reactjs' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png' /> &nbsp;
     <img align='center' height='58' width='58' title='React Router Dom' alt='roterdom' src='https://imgur.com/shLwbe3.png' /> &nbsp;
     <img align='center' height='46' width='64' title='Tailwind' alt='tailwind' src='https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png' /> &nbsp;
-    <img align='center' height='53' width='55' title='Phosphor Icons' alt='phosphor' src='https://raw.githubusercontent.com/phosphor-icons/phosphor-react/HEAD/meta/phosphor-mark-tight-yellow.png' />
+    <img align='center' height='53' width='55' title='Phosphor Icons' alt='phosphor' src='https://raw.githubusercontent.com/phosphor-icons/phosphor-react/HEAD/meta/phosphor-mark-tight-yellow.png' /> &nbsp;
+    <img align='center' height='48' width='48' title='Visual Studio Code' alt='vscode' src='https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png' /> &nbsp;
+    <img align='center' height='46' width='46' title='Jetbrains WebStorm' alt='webstorm' src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/WebStorm_Icon.svg/1024px-WebStorm_Icon.svg.png' />
 </div>
 
 <br>
