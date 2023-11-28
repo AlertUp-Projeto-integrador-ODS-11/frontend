@@ -34,6 +34,10 @@ function Cadastro() {
     navigate('/')
   }
 
+  function retornarLogin() {
+    navigate('/Login')
+  }
+
   function handleConfirmarSenha(e: ChangeEvent<HTMLInputElement>) {
     setConfirmaSenha(e.target.value)
   }
@@ -162,7 +166,7 @@ function Cadastro() {
             </button>
             <button
               className='rounded text-white bg-primary hover:bg-[#FEA235] w-1/2 py-2 flex justify-center'
-              type='submit'>
+              onClick={retornarLogin} type='submit'>
               {isLoading ? <RotatingLines
                 strokeColor="white"
                 strokeWidth="5"
