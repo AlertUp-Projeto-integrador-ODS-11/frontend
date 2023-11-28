@@ -11,7 +11,6 @@ function Temas() {
                     <div className="flex flex-col gap-4 items-start justify-center py-20  ">
                         <p className='text-xl text-[#585659]'>
                         Escreva aqui um tema para as postagens!
-                        Conectando cidadãos, transformando cidades.
                         </p>
 
                         <div className="flex justify-around gap-4">
