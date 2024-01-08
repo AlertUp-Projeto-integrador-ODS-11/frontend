@@ -17,6 +17,7 @@ O frontend foi desenvolvido utilizando a tecnologia React e oferece uma interfac
 
 <div>
     <img align='center' height='50' width='56' title='React' alt='reactjs' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png' /> &nbsp;
+    <img align='center' height='50' width='50' title='TypeScript' alt='typescript' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png' /> &nbsp;
     <img align='center' height='58' width='58' title='React Router Dom' alt='roterdom' src='https://imgur.com/shLwbe3.png' /> &nbsp;
     <img align='center' height='46' width='64' title='Tailwind' alt='tailwind' src='https://static-00.iconduck.com/assets.00/tailwind-css-icon-2048x1229-u8dzt4uh.png' /> &nbsp;
     <img align='center' height='53' width='55' title='Phosphor Icons' alt='phosphor' src='https://raw.githubusercontent.com/phosphor-icons/phosphor-react/HEAD/meta/phosphor-mark-tight-yellow.png' /> &nbsp;
@@ -34,7 +35,7 @@ A fim de criar uma experiência maiores complicações para realizar a sua denú
 
 ## Equipe do Projeto:
 
-  | [<img src="https://avatars.githubusercontent.com/u/11530020?v=4" width=115><br><sub>Breno Henrique</sub>](https://github.com/brenonsc) | [<img src="https://media.licdn.com/dms/image/D4D03AQGoIVIx5R9Wpg/profile-displayphoto-shrink_400_400/0/1636665202433?e=1706140800&v=beta&t=38-kZ6p9TuHZj9mBep2KoouzfkFqrrKybbvvSdkQ7kI" width=115><br><sub>Julia Alexandrino</sub>](https://github.com/juhalexandrino) | [<img src="https://avatars.githubusercontent.com/u/102914299?v=4" width=115><br><sub>Matheus Queiroz</sub>](https://github.com/MatheusSQueiroz) | [<img src="https://avatars.githubusercontent.com/u/85324161?v=4" width=115><br><sub>Shomara Quispe</sub>](https://github.com/ShomaraQuispe) | [<img src="https://avatars.githubusercontent.com/u/70173955?v=4" width=115><br><sub>Victor Paliari</sub>](https://github.com/victorpaliari) |
+  | [<img src="https://media.licdn.com/dms/image/D4D03AQHB_vJ9LszPiQ/profile-displayphoto-shrink_800_800/0/1701797174279?e=1710374400&v=beta&t=a7N-KmawnKZxlstomf9Nv0NYT-LZzlcs_KjWGzTje6o" width=115><br><sub>Breno Henrique</sub>](https://github.com/brenonsc) | [<img src="https://media.licdn.com/dms/image/D4D03AQGoIVIx5R9Wpg/profile-displayphoto-shrink_400_400/0/1636665202433?e=1706140800&v=beta&t=38-kZ6p9TuHZj9mBep2KoouzfkFqrrKybbvvSdkQ7kI" width=115><br><sub>Julia Alexandrino</sub>](https://github.com/juhalexandrino) | [<img src="https://avatars.githubusercontent.com/u/102914299?v=4" width=115><br><sub>Matheus Queiroz</sub>](https://github.com/MatheusSQueiroz) | [<img src="https://avatars.githubusercontent.com/u/85324161?v=4" width=115><br><sub>Shomara Quispe</sub>](https://github.com/ShomaraQuispe) | [<img src="https://avatars.githubusercontent.com/u/70173955?v=4" width=115><br><sub>Victor Paliari</sub>](https://github.com/victorpaliari) |
   | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 
 <br>
